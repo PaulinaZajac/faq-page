@@ -1,0 +1,151 @@
+body {
+  margin: 0%;
+}
+
+.faq-container {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 3vh;
+  width: 70vw;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 23px;
+  font-family: 'Kumbh Sans', sans-serif;
+  box-shadow: 0px 22px 28px -15px rgb(39, 11, 96);
+  padding: 2rem;
+}
+
+.faq-image-woman {
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+}
+
+.image-desktop-only {
+  position: relative;
+  margin-left: -5vw;
+}
+
+.box-image-desktop-only {
+  position: absolute;
+  margin-top: 17vh;
+  margin-left: -7.5vw;
+}
+
+.image-mobile-only {
+  display: none;
+}
+
+.faq-pattern {
+  overflow: hidden;
+}
+.pattern-desktop-only {
+  position: relative;
+  margin-left: -39vw;
+  margin-top: -43vh;
+}
+
+.arrow-top img {
+  transform: scaleY(-1);
+}
+
+.faq-text-wrapper {
+  margin-right: 3%;
+}
+
+.faq-text-header {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  border-bottom: 0.3px solid rgb(180, 180, 180);
+  width: 32vw;
+}
+
+.title {
+  flex-basis: 90%;
+  font-size: 0.7rem;
+}
+
+.title:hover {
+  flex-basis: 90%;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #f47b56;
+}
+
+.content {
+  flex-basis: 90%;
+  max-height: 0;
+  font-size: 0.7rem;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  flex-basis: 90%;
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media (max-width: 900px) {
+  .faq-container {
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+    margin-top: 0;
+  }
+
+  .faq-text-wrapper {
+    padding: 10%;
+  }
+
+  .faq-image-woman {
+    overflow: visible;
+    margin-top: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-desktop-only {
+    display: none;
+  }
+
+  .box-image-desktop-only {
+    display: none;
+  }
+
+  .image-mobile-only {
+    display: flex;
+    width: 45vw;
+    position: absolute;
+  }
+
+  .pattern-desktop-only {
+    display: none;
+  }
+
+  .faq-questions {
+    padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .faq-text-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+}
